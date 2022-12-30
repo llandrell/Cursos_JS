@@ -230,5 +230,67 @@ DOM (Document Object Model)
         math.PI cria o PI
     
 
+Arrays
 
+    Declarando um array:
+        const alunos ['fulano','joão','rafael']
+    os arrays são indexavel pelos seus elementos.
+        Ex 0 == 'fulano'
+           1 == 'joão'
+           2 == 'rafael'
+    para acessar um array:
+        console.log(aluno[0]) array aluno no indice 0 == fulano
+        console.log(aluno) array completo os 3 nomes
+        aluno[0] = 'Eduardo' muda o array [0] fulano para eduardo
+        aluno[3] = 'Luiza' criando um array[3] com o nome Luiza
+        console.log(aluno.length) para saber o tamanho do array
+        aluno[aluno.length] = 'nome novo' criando um array novo no ultimo indice  com base no tamanho do array (lenght) 
+        aluno.push('nome novo2') essa função cria um elemento no final do array
+        aluno.unshift('novo primeiro nome') essa função cria um novo elemento no começo do array[0] no indice 0
+        aluno.pop(); remove o ultimo indice do array / retorno o elemento removido
+        aluno.shift() remove o primeiro elemento do array /  retorno o elemento removido
+        delete aluno[1] deleta o conteudo do indice, porem o indice fica na memoria como undefined 
+        aluno.slice(0, 2)        (elemento 0, ate o elemento 2) fatia o array pegando do indice 0 ate o indice 2, o ultimo indice nunca e incluido exemplo retorno aoenas fulano e joão
+        aluno.slice(0, -2)mesma coisa porem elimina os 2 ultimos arrays (pega tamanho do array menos a quantidade de indice)]
+        todo array é um objeto alto indexavel 
+        alunos instaceof array verifica se realmente é um array
+        todo array é criado com []
 
+Funções 
+    toda função exuculta uma ação
+    um trecho de codigo
+
+    criando uma função 
+        function  saudacao(parametros) {
+            corpo dessa função
+            console.log(´bom dia ${parametro}´);
+        }
+    
+    chamando uma função
+        saudacao(valor para função);
+
+    criando uma função com retorno de valor
+
+    function  saudacao(nome) {
+            
+            console.log(´bom dia ${nome}´);
+            return nome
+        }
+
+        let nome = saudacao('lucas')
+        console.log(nome);
+        vai retornar  o nome lucas
+
+    a função pode receber varios valores
+        function soma (x, y, Z){
+            const resultado = x+y+z;
+            return resultado;
+        }
+    outras formas de criar funções
+        const raiz = funciton (n){
+            return n ** 0.5;
+        };
+
+        const raiz = n => 
+             n ** 0.5;
+       
