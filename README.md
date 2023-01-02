@@ -233,7 +233,7 @@ DOM (Document Object Model)
 Arrays
 
     Declarando um array:
-        const alunos ['fulano','joão','rafael']
+        const alunos = ['fulano','joão','rafael']
     os arrays são indexavel pelos seus elementos.
         Ex 0 == 'fulano'
            1 == 'joão'
@@ -267,7 +267,7 @@ Funções
         }
     
     chamando uma função
-        saudacao(valor para função);
+        saudacao(valor para função);{}
 
     criando uma função com retorno de valor
 
@@ -293,4 +293,71 @@ Funções
 
         const raiz = n => 
              n ** 0.5;
-       
+
+
+    Objetos
+
+        Declarando um objeto
+        é possivel criar funções dentro de objetos 
+        e objetos com funções.
+        dentro do objeto o valor e atribuido com : dois pontos não =
+
+            todo objeto e criado com {}
+
+            const nome01 = {
+                atributo: 'valor do atributo', 
+                outroAtributo: 'valor do atributo',
+                terceiroAtributo: 'valor do atributo
+            };
+
+            nome01.atributo para acessar outro atributo
+
+
+            criando objetos com funções:
+
+                 //declarando as variaveis
+                        let nome = prompt('informe seu nome: ');
+                        let sobrenome = prompt('informe seu Sobrenome: ');
+                        let idade = prompt('informe sua idade: ');
+                        let texto1 = document.getElementById('texto'); // criando a variavel testo1 e fazendo um get pelo id texto no html 
+
+                        // criando uma função para criar o objeto pessoa1
+                        function criarPessoa(nome, sobre, idade) {
+                            return {
+                                nome: nome,
+                                sobrenome: sobrenome,
+                                idade: idade,
+
+                            }
+                        };
+
+                        const pessoa1 = criarPessoa(nome, sobrenome, idade); // criando o objeto pessoa um recebendo os parametros do prompt.
+
+                        texto1.innerHTML = `meu nome dentro do objeto é ${pessoa1.nome}, sobrenome é ${pessoa1.sobrenome}, e idade é : ${pessoa1.idade}`; //apenas para imprimir na tela
+                        
+
+
+
+    Valor primitivo e valor por referencias
+
+        os dados primitivos são imutáveis  
+            primitivos(os valores são copiados):
+                Valores imutáveis
+                    string
+                    number
+                    boolean
+                    underfined
+                    null
+                    bigint
+                    symbol 
+
+            Referencia(aponta para o mesmo valor na memoria ):
+                mutaveis
+                    arrays
+                    funções
+                    objetos
+                copiando um valor mutavel  de a para b
+                    let a = [1,2,3,4,5];
+                    let b = [...a];
+
+
