@@ -361,3 +361,27 @@ Funções
                     let b = [...a];
 
 
+    Operadores de Comparação 
+        
+            * > Maior que 
+                Checa se um atributo é MAIOR que o outro
+                
+            * >= Maior que ou igual a
+                checa se um atributo e MAIOR ou IGUAL a outro
+                    primiero ele checa se o atributo e maior depois checa se é igual 
+                        
+            * < menor que
+                 Checa se um atributo é MENOR que o outro
+
+            * <= menor que ou  igual a
+                checa se um atributo e MENOR ou IGUAL a outro
+
+            * == iguadade (valor) -- não ultilizado
+            * === igualdade (estrita) (valor e tipo)
+                    checa se um atributo e igual em valor e tipo 
+
+            * != deferente de (valor) -- não ultilizado
+            * !== deferente de  (estrito) (valor e tipo
+                 checa se um atributo e DIFERENTE em valor e tipo 
+
+    Operadores Logicos
