@@ -385,3 +385,49 @@ Funções
                  checa se um atributo e DIFERENTE em valor e tipo 
 
     Operadores Logicos
+
+
+
+
+
+
+
+
+    operadores ternarios.
+
+        condição ? Valor verdadeiro : valor para falso
+        se se  não 
+        if else 
+        ? :
+            pode subistituir if else
+
+            let pontuaçãoUser = 999;
+            const nivelUSer = pontuaçãoUser >= 1000 ? 'user vip' : 'user normal';
+
+            ()condição - ?se  - :se  não
+
+            (condição) ? 'valor para verdadeiro' : 'valor para falso';
+
+        e  ou
+        && ||
+
+            falbek (setando um valor padrão para variavel)
+
+            variavel = Cor Escolhida pelo user ||Ou 'valor padrão'
+
+            const corPadrao = corUser || 'preta';
+            corpadrao recebe corUser ou 'cor preta';
+
+            se uma ou otra condição for verdadeira
+
+
+    Objetos
+        função date
+            const data = new Date(); // ultilizando um objeto date para criar uma nova data. (gerando um objeto com data e hora)
+            toda função date é uma função  construtora.
+            new Date() 
+            toda função construtora começa com a letra maiuscula
+            toda vez que eu crio uma função construtora começa com a palavra new
+            a função date é uma função construtora
+            toda vez que criar uma função new Date() sem parametro ela pega o horario atual.
+                
