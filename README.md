@@ -431,3 +431,20 @@ Funções
             a função date é uma função construtora
             toda vez que criar uma função new Date() sem parametro ela pega o horario atual.
                 
+    Switch/Case
+
+        o switch é algo bem parecido com o If, o switch e usado quando á apenas uma condição.
+        quando a apenas uma variavel (uma condição) e a melhor hora de se criar um switch.
+        todo switch case e necessario ter um break.
+        o default e a ultima condição  a ser execultada.    
+        pode existir quantos cases forem necessarios.
+        e necessario o uso de break em todos os case, com excesão de switch case dentro de funções   
+
+        caso o dia for TAL faZ isso aqui:
+        swithc (condição) {
+            case valorDoCase: 
+               codigo ;
+            break;
+            Default:
+            Codigo;
+        };
