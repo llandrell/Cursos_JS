@@ -11,14 +11,14 @@
     */
 
     Comandos VSCODE LINUX (andré)
-        dobrar” o código Ctrl + Shift + [ desdobra Ctrl + Shift + ]
-        Ctrl + Shift + i faz a indentação do codigo (formata o codigo)
-        Ctrl + \ comenta a linha //
-        Ctrl + Shift + a comenta o bloco /* */
+        dobrar” o código Ctrl + Shift + [ (desdobra Ctrl + Shift + ])
+        Ctrl + Shift + i (faz a indentação do codigo) (formata o codigo)
+        Ctrl + \ (comenta a linha) //
+        Ctrl + Shift + a (comenta o bloco) /* */
         Ctrl + b abre e fecha a barra lateral
-        Ctrl + Shift d duplica linha 
-        Ctrl + x deleta uma linha
-        ctrl+shift+alt+up ou ctrl+shift+alt+down copias linha para baixo ou parac
+        Ctrl + Shift d (duplica linha)
+        Ctrl + x (deleta uma linha)
+        ctrl+shift+alt+up ou ctrl+shift+alt+down (copias linha para baixo ou parac)
 
 
 
@@ -51,7 +51,7 @@
         NaN = Not a number
 
     Variaves e constante:
-      OBS:não pode redeclarar variaveis
+      OBS:não pode redeclarar variaveis com LET
         -não pode ser palavras reservadas da linguagem 
         -tem que ter nome significativos
         -não começar variavel com numero
@@ -65,6 +65,20 @@
             var = variavel absoleta
             let = variavel
             const = constante
+
+        Diferenças de Var e Let
+
+        Var:
+        se declara uma variavel com o mesmo nome ela e sobrescrita 
+        so tem escopo de função
+        toda função protege as variaveis dentro delas
+        quando se declara uma variavel com var ela é elevada ao topo do codigo
+        as declarações de variáveis com var e funções são fisicamente movidas para o topo do seu código (são colocadas na memória durante a fase de compilação, mas permanecem exatamente onde você as digitou no seu código.)
+
+        Let:
+         não  pode redeclara a mesma variavael com let
+         lete tem escopo de bloco {...bloco}
+         quando se declara uma variavel com let ele não é elevada ao top não acontece o Hoisting ou içamento
 
     tipos de dados em JS / manipulando dados:
         Seis tipos de dados são os chamados primitivos:
@@ -125,6 +139,8 @@
                 Ex: teste?treu:false
                     média>=7.0?"Aprovado":"reprovado"
                     se media maior igual a 7.00 faça aprovado senão reprovado
+
+
 
         precedencia:
         () ** / (aritimeticos)
@@ -448,3 +464,24 @@ Funções
             Default:
             Codigo;
         };
+
+    
+    Atribuição via desestruturação:
+
+    const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9] // criando um array indexavel 
+
+            / //console.log(numeros[3]) // saber qual o valor do array numeros no indece 3 = numero 4
+
+            // //const TerceiroNum = numeros[2]; // atribuindo um valor a constante pelo  array.
+            //console.log(numeros[2]);
+
+
+            // //atribuido por desestruturação.
+            // // caso seja feito com const  todas variavel vão ser const ou let caso seja criado com let
+
+            // const [primeiroNum, segundoNum] = numeros; // atribuição por desestruturação, para cada item criado eu estou atribuido o valor do indice do aura, exemplo primieroNum Recebe indice 0, segundoNum recebe indece 1.
+            // console.log(primeiroNum, segundoNum);
+                com ... é possivel pegar o resto do auray. rest operations js
+
+            é possivel pegar operadores vazios pulando os indices 
+             exemplo
