@@ -466,7 +466,7 @@ Funções
         };
 
     
-    Atribuição via desestruturação:
+    Atribuição via desestruturação array:
 
     const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9] // criando um array indexavel 
 
@@ -484,4 +484,35 @@ Funções
                 com ... é possivel pegar o resto do auray. rest operations js
 
             é possivel pegar operadores vazios pulando os indices 
-             exemplo
+             exemplo:const [primeiroNum, , terceiroNum, , quartoNum, , , oitovaoNum] = numeros;
+
+    
+    Atribuição via desestruturação objetos:
+
+            é bem parecido com o array.
+            usa {} ao inves de [].
+            para pegar um valor dentro do objeto basta usar o mesmo nome da variavel dentro do objeto.
+            é possivel criar uma variavel com o nome diferente do objeto.
+                usando nomeVariavelDentroDoOBjeto : nomeNovo.
+                const { nome = '', sobrenome: segundoNome, idade } = pessoa;
+            é possivel usar um valor padrão caso a variavel não exista dentro objeto exemplo do nome.
+
+    
+
+    Estruturas de repetição:
+    
+
+
+
+        For: 
+            Estrutura do for :
+                for (let i (var de Incremento) = 0 (valor inicial do laço); i <= 8 (condição para o laço); i++ (incrementando valor a i)){
+                    codigo a ser execultado a cada volta do laço.
+                }
+             dentro dos () parenteses do for é necessario cria uma variavel de controle (geralmente i), uma   condição para parar esse laço, incrementar a variavel de controle
+             depois do for não pode colocar ; ponto e virgula
+             é preciso incrementar ou decrementar a variavel de controle
+             é necessario setar um valor inicial a variavel de controle 
+             para dividir as espreçoes usa ; ponto e virgula
+             pode mudar o valor o valor de incremento usando i += 10 vai pular de 10 em 10
+             usando i -= 2 voce decrementa de 2 em 2
