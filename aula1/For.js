@@ -54,3 +54,8 @@
 //for (let i = 0; i < frutas.length; i++){ // iniciando o indice do 0 e usando o tamanho do array com parametro de condição, incrementando valor de i.
    // console.log(i, frutas[i]);
 //}
+
+
+
+// exercicos.
+

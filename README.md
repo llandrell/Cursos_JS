@@ -504,7 +504,7 @@ Funções
 
 
 
-        For: 
+        For classicos: 
             Estrutura do for :
                 for (let i (var de Incremento) = 0 (valor inicial do laço); i <= 8 (condição para o laço); i++ (incrementando valor a i)){
                     codigo a ser execultado a cada volta do laço.
@@ -516,3 +516,28 @@ Funções
              para dividir as espreçoes usa ; ponto e virgula
              pode mudar o valor o valor de incremento usando i += 10 vai pular de 10 em 10
              usando i -= 2 voce decrementa de 2 em 2
+
+        for classicos - geralmente com iteráveis (array ou strings).
+        for in - retorna o indice ou chave (string, array ou objetos).
+        for of - retorna um valor em si (iteraves, array ou strings).
+
+
+        For in:
+            for in ler os indices do array ou atributos de valor do objeto.
+
+        For of :
+            expecificos para objetos com indices (iteravel)
+
+    DOM E ÁRVORE DOM
+        Document Object Model
+
+         window =  Objeto geral do navegador
+           document = documento html
+             html 
+              head
+              body
+                section
+                 h1
+                  no de texto
+                 div
+               
