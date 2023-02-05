@@ -22,6 +22,27 @@
 
 
 
+        Ctrl + \ (comenta a linha) //
+        Ctrl + Shift + a (comenta o bloco) /* */
+        Ctrl + b abre e fecha a barra lateral
+        Ctrl + Shift d (duplica linha)
+        Ctrl + x (deleta uma linha)
+        ctrl+shift+alt+up ou ctrl+shift+alt+down (copias linha para baixo ou parac)
+
+
+
+    node = motor de javascript que roda fora do navegador (JS em Servidor).
+    livros referencias: js o guia definitivo, js Guia do programador.
+
+
+    script:src =  cria o link entre o html e o arquivo javacript:
+
+    
+
+    sinais:
+        = recebe
+        + adição (para numbers) ou concatenação (para string)
+        '' = string com aspas simples
     node = motor de javascript que roda fora do navegador (JS em Servidor).
     livros referencias: js o guia definitivo, js Guia do programador.
 
@@ -517,16 +538,48 @@ Funções
              pode mudar o valor o valor de incremento usando i += 10 vai pular de 10 em 10
              usando i -= 2 voce decrementa de 2 em 2
 
-        for classicos - geralmente com iteráveis (array ou strings).
-        for in - retorna o indice ou chave (string, array ou objetos).
-        for of - retorna um valor em si (iteraves, array ou strings).
+            for classicos - geralmente com iteráveis (array ou strings).
+
+            for in - retorna o indice ou chave (string, array ou objetos).
+            O loop for...in irá iterar sobre todas as propriedades enumeráveis de um objeto.
+            for in retorna o indice do array
+
+            for of - retorna um valor em si (iteraves, array ou strings).
+            for of retorna o valor do indice
 
 
-        For in:
-            for in ler os indices do array ou atributos de valor do objeto.
+            For in:
+                for in ler os indices do array ou atributos de valor do objeto.
 
-        For of :
-            expecificos para objetos com indices (iteravel)
+            For of :
+                expecificos para objetos com indices (iteravel)
+                retorna o conteudo do indece
+
+        while e Do While
+
+            Geralmente não sabe qunatas vezes essa repetição tem que ocorer para que o laço termine
+            cria a variavel fora do while checa a condição se for verdadeira entra no bloco, atualiza avariavel de controle e assim que a condição for false o laço termina]
+
+            diferença de while e do While é que while  check primeiro e o do While execulta primeiro para depois checar
+            
+            let i = 0; // variavel de controle
+
+            // enquanto i for menor ou igual que 10  execulte 
+            while (i<= 10) {
+
+                // mostre o valor de i
+                console.log(i);
+                //adicione i+i
+                i++;
+            }
+
+
+            do {
+                    codigo
+            }While(condição)
+
+
+
 
     DOM E ÁRVORE DOM
         Document Object Model
@@ -541,3 +594,5 @@ Funções
                   no de texto
                  div
                
+
+    
