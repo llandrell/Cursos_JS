@@ -1,7 +1,7 @@
 // parar o envio do formulario, capturando evento de submit do formulario html
 
 
-const forme = document.querySelector('#forme'); //Selecionando o formulario atraves da constante forme pelo id forme
+ //Selecionando o formulario atraves da constante forme pelo id forme
 
 // criando um evento para para o envio do formulario html
 

@@ -595,4 +595,12 @@ Funções
                  div
                
 
+Tratando e lançado erro em JS
+
+        (try = tente execultar o codigo) (catch =  caso não ocorra alguam erro no try execulte o catch)
+        try {
+            codigo
+        } catch (err){
+            codigo
+        }
     
