@@ -459,6 +459,11 @@ Funções
 
 
     Objetos
+
+        função
+            o return dentro da função faz com que a função pare ou acabe
+
+
         função date
             const data = new Date(); // ultilizando um objeto date para criar uma nova data. (gerando um objeto com data e hora)
             toda função date é uma função  construtora.
