@@ -296,7 +296,11 @@ Arrays
 Funções 
     toda função exuculta uma ação
     um trecho de codigo
+    todos as funções que não tem retorno e chamada de procedimentos
 
+    Como Organizar Funções?
+       Porque ? Pois torna o código mais legível, modular e fácil de dar manutenção.
+      A função main é a função principal do progrma e lida com a entrada e chama as funções apropriadas.
     criando uma função 
         function  saudacao(parametros) {
             corpo dessa função
