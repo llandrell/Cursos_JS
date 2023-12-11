@@ -39,12 +39,9 @@
 
     
 
-    sinais:
-        = recebe
-        + adição (para numbers) ou concatenação (para string)
-        '' = string com aspas simples
+   
     node = motor de javascript que roda fora do navegador (JS em Servidor).
-    livros referencias: js o guia definitivo, js Guia do programador.
+    livros referencias: js o guia definitivo(COMPRADO), js Guia do programador, Clear Code
 
 
     script:src =  cria o link entre o html e o arquivo javacript:
@@ -616,4 +613,130 @@ Tratando e lançado erro em JS
 
 Lista de Terefas
 
-    
+
+OBJETOS
+São usados para representar e organizar dados e  podem conter propriedades(dados) e métodos (functions).
+A criação básica de um objeto em JavaScript é feita utilizando chaves {}.
+Forma literal de Criar um objeto
+
+const nome = {
+nomevalor: 'conteudo do valor',
+nome: 'André Lucas,
+idade: 29
+}
+
+é possivel incrementar objetos dinamicamente
+(adicionar novas propriedades)
+Exemplo
+nome.profissao = 'Desenvolvedor';
+
+// Adicionando várias propriedades de uma vez
+Object.assign(nome, {
+  profissao: 'Desenvolvedor',
+  cidade: 'São Paulo'
+});
+
+é possivel remover tambem 
+você pode usar a palavra-chave delete 
+// Removendo a propriedade 'profissao'
+delete nome.profissao;
+
+Usando desestruturação (ES6+):
+javascript
+Copy code
+let pessoa = {
+  nome: 'João',
+  idade: 25,
+  profissao: 'Desenvolvedor'
+};
+
+// Criando um novo objeto sem a propriedade 'profissao'
+let { profissao, ...novaPessoa } = pessoa;
+
+console.log(novaPessoa);
+// Saída: { nome: 'João', idade: 25 }
+
+Lembrando que a palavra-chave delete remove a propriedade diretamente do objeto existente, enquanto a desestruturação cria um novo objeto sem a propriedade desejada, mantendo o objeto original inalterado.
+
+Para acessar dinamicamente as propriedades de um objeto em JavaScript, você pode usar a notação de colchetes []
+
+ Isso é útil quando você tem o nome da propriedade armazenado em uma variável ou quando precisa acessar propriedades de forma dinâmica.
+
+
+ let chave = 'idade';
+
+// Acessando a propriedade dinamicamente
+console.log(pessoa[chave]);
+// Saída: 25
+
+Antes de acessar uma propriedade dinamicamente, é uma boa prática verificar se a propriedade realmente existe no objeto, para evitar erros:
+
+// Verificando se a propriedade existe
+if (pessoa.hasOwnProperty(propriedade)) {
+  console.log(pessoa[propriedade]);
+} else {
+  console.log('Propriedade não encontrada');
+}
+
+Acessando Propriedades Aninhadas Dinamicamente:
+let chave1 = 'endereco';
+let chave2 = 'cidade';
+
+// Acessando propriedades aninhadas dinamicamente
+console.log(pessoa[chave1][chave2]);
+
+
+
+Métodos:
+(funções dentro de objetos)
+Métodos em JavaScript são funções associadas a objetos. Eles são declarados da mesma forma que funções, mas são atribuídos a propriedades de objetos.
+
+Dentro de um método, a palavra-chave this refere-se ao objeto no qual o método está sendo chamado. Isso permite que você acesse outras propriedades do objeto.
+
+
+let pessoa = {
+  nome: 'João',
+  idade: 25,
+  saudacao: function() {
+    console.log('Olá! Meu nome é ' + this.nome + ' e tenho ' + this.idade + ' anos.');
+  }
+};
+
+
+Métodos Shorthand (ES6+):
+Com o ES6 e versões posteriores, você pode usar a sintaxe de método shorthand ao definir métodos em objetos:
+
+javascript
+Copy code
+let pessoa = {
+  nome: 'João',
+  idade: 25,
+  saudacao() {
+    console.log(`Olá! Meu nome é ${this.nome} e tenho ${this.idade} anos.`);
+  }
+};
+Essa sintaxe mais curta é equivalente à sintaxe anterior e simplifica a definição de métodos
+    sem o nome fuction
+
+
+
+                                              Classes em JAVASCRIPT
+
+classes são uma maneira de criar objetos e organizar o código de maneira orientada a objetos. 
+
+Criando uma classe pessoa com construtor e um metodo saudacao:
+class Pessoa {
+  constructor(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+  saudacao() {
+    console.log(`Olá! Meu nome é ${this.nome} e tenho ${this.idade} anos.`);
+  }
+}
+
+Criando Instâncias da Classe pessoa:
+
+let pessoa1 = new Pessoa('João', 25);
+let pessoa2 = new Pessoa('Maria', 30);
